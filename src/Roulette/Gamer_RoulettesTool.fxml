@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="998.0" prefWidth="1199.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Roulette.Gamer_Controller">
+   <children>
+      <ImageView fitHeight="1075.0" fitWidth="1215.0" layoutX="-8.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/배경1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="870.0" fitWidth="820.0" layoutX="185.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/테두리.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="-2.0" prefHeight="114.0" prefWidth="1200.0">
+         <children>
+            <Label style="-fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.7),10,0,5,5);" text="룰렛게임" textFill="WHITE">
+               <font>
+                  <Font name="HYHeadLine-Medium" size="62.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="622.0" layoutY="123.0" prefHeight="130.0" prefWidth="537.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="120.0" prefWidth="247.0" style="-fx-background-color: transparent;  -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.7),10,0,5,5);" text="결과확인 : " textFill="WHITE">
+               <font>
+                  <Font name="HYHeadLine-Medium" size="39.0" />
+               </font>
+            </Button>
+            <TextField fx:id="res" alignment="CENTER" editable="false" prefHeight="120.0" prefWidth="283.0" style="-fx-background-color: transparent; -fx-text-fill: WHITE; -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.7),10,0,5,5);" text=" ">
+           
+               <font>
+                  <Font name="HYHeadLine-Medium" size="49.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <ImageView fx:id="fxView" fitHeight="735.0" fitWidth="735.0" layoutX="231.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.7),10,0,5,5);">
+         <image>
+            <Image url="@../img/roulett2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="fxShine" fitHeight="792.0" fitWidth="787.0" layoutX="203.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/light1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fxStart" cancelButton="true" layoutX="497.0" layoutY="499.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="230.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.7),10,0,5,5);">
+               <image>
+                  <Image url="@../img/Start.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

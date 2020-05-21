@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Controller">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="850.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/dot.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="111.0" layoutY="224.0" prefHeight="138.0" prefWidth="614.0" spacing="27.0">
+         <children>
+            <ImageView fx:id="zero" fitHeight="100.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/0.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fx:id="one" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="two" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="three" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/3.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="four" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/4.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="five" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/5.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label layoutX="298.0" layoutY="89.0" text="Time">
+         <font>
+            <Font name="D2Coding" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="fxtime" layoutX="422.0" layoutY="89.0" text="　　">
+         <font>
+            <Font name="D2Coding" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="zeroUser" layoutX="61.0" layoutY="157.0" text="　　" />
+      <Label fx:id="oneUser" layoutX="131.0" layoutY="157.0" text="　　" />
+      <Label fx:id="twoUser" layoutX="199.0" layoutY="157.0" text="　　" />
+      <Label fx:id="threeUser" layoutX="272.0" layoutY="157.0" text="　　" />
+      <Label fx:id="fourUser" layoutX="340.0" layoutY="157.0" text="　　" />
+      <Label fx:id="fiveUser" layoutX="417.0" layoutY="157.0" text="　　" />
+   </children>
+</AnchorPane>

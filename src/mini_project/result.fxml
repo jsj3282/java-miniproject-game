@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="254.0" prefWidth="335.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="mini_project.resultController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="39.0" prefHeight="15.0" prefWidth="153.0" text="FINISH" textFill="#da3737">
+         <font>
+            <Font name="DejaVu Sans Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fxResult" alignment="CENTER" layoutX="54.0" layoutY="127.0" prefHeight="39.0" prefWidth="237.0" text="Label" />
+   </children>
+</AnchorPane>
